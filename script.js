@@ -8,7 +8,7 @@ on transforme ensuite cette réponse en '.json' donc en objet afin qu'il puisse 
         // Deuxième '.then' qui permet maintenant de lire le '.json'
         .then(data => {
             output.textContent = ""; // permet de se vider lors d'une nouvelle requête 
-            output.textContent = `Compte de ${data.name}`;            
+            output.textContent = `Compte de : ${data.name}`;            
             const IMG = document.createElement('img');
             IMG.src = data.avatar_url;
             output.appendChild(IMG);
@@ -22,7 +22,7 @@ on transforme ensuite cette réponse en '.json' donc en objet afin qu'il puisse 
             output.appendChild(URL);
 
             const REPOS = document.createElement('p');
-            REPOS.textContent = `Nombre de repos publiques : ${data.public_repos}`;
+            REPOS.textContent = `Nombre de repositories publiques : ${data.public_repos}`;
             output.appendChild(REPOS);
 
             const FOLLOWERS = document.createElement('p');
