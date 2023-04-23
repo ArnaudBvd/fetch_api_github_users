@@ -9,10 +9,16 @@ h1 {
     font-size: 2.2em;
 }
 
+#logo {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
 #research {
     display: flex;
     justify-content: center;
-    margin-top: 125px;
+    margin-top: 80px;
     margin-bottom: 75px;
 }
 
@@ -43,10 +49,15 @@ img {
 }
 
 #output {
-    color: #ffffff;
-    /* text-transform: uppercase; */
+    color: #ffffff;    
     font-size: 1.5em;
     display: flex;
     align-items: center;
     flex-direction: column;
+}
+
+.border {
+    border: 5px solid #149414;
+    padding-top: 15px;
+    border-radius: 10px;    
 }
