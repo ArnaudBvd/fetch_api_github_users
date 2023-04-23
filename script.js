@@ -9,12 +9,29 @@ on transforme ensuite cette réponse en '.json' donc en objet afin qu'il puisse 
         .then(data => {
             output.textContent = ""; // permet de se vider lors d'une nouvelle requête 
             output.textContent = `Compte de ${data.name}`;            
-            const img = document.createElement('img');
-            img.src = data.avatar_url;
-            output.appendChild(img);
-            const login = document.createElement('p');
-            login.textContent = `Login : ${data.login}`;
-            output.appendChild(login);                  
+            const IMG = document.createElement('img');
+            IMG.src = data.avatar_url;
+            output.appendChild(IMG);
+
+            const LOGIN = document.createElement('p');
+            LOGIN.textContent = `Login : ${data.login}`;
+            output.appendChild(LOGIN);
+            
+            const URL = document.createElement('p');
+            URL.textContent = `URL : ${data.html_url}`;
+            output.appendChild(URL);
+
+            const REPOS = document.createElement('p');
+            REPOS.textContent = `Nombre de repos publiques : ${data.public_repos}`;
+            output.appendChild(REPOS);
+
+            const FOLLOWERS = document.createElement('p');
+            FOLLOWERS.textContent = `Nombre de followers : ${data.followers}`;
+            output.appendChild(FOLLOWERS);
+
+            const FOLLOWING = document.createElement('p');
+            FOLLOWING.textContent = `Nombre de following : ${data.following}`;
+            output.appendChild(FOLLOWING);
         })            
         
 }
