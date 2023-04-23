@@ -11,8 +11,12 @@ on transforme ensuite cette réponse en '.json' donc en objet afin qu'il puisse 
             output.textContent = `Compte de ${data.name}`;            
             const img = document.createElement('img');
             img.src = data.avatar_url;
-            output.appendChild(img);                    
-        })       
+            output.appendChild(img);
+            const login = document.createElement('p');
+            login.textContent = `Login : ${data.login}`;
+            output.appendChild(login);                  
+        })            
+        
 }
 
 
