@@ -1,11 +1,19 @@
 body {
     background-color: #171515;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 h1 {
     text-align: center;
     color: #ffffff;
-    font-size: 2.5em;
+    font-size: 2.2em;
+}
+
+#research {
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+    margin-bottom: 75px;
 }
 
 input {
@@ -13,6 +21,7 @@ input {
     border: none;
     border-radius: 10px;
     width: 300px;
+    margin-right: 10px;
 }
 
 #btn {
@@ -24,12 +33,20 @@ input {
     font-weight: bold;
     border-radius: 10px;
     cursor: pointer;
+    margin-left: 10px;
 }
 
 img {
-    width: 150px;
+    width: 250px;
+    border-radius: 50%;
+    margin-top: 25px;
 }
 
 #output {
     color: #0000ff;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
