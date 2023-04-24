@@ -48,6 +48,11 @@ img {
     margin-top: 25px;
 }
 
+#content {
+    display: flex;
+    justify-content: center;
+}
+
 #output {
     color: #ffffff;    
     font-size: 1.5em;
@@ -59,5 +64,6 @@ img {
 .border {
     border: 5px solid #149414;
     padding-top: 15px;
-    border-radius: 10px;    
+    border-radius: 10px;
+    width: 600px;    
 }
